@@ -1,16 +1,17 @@
 var os = require('os');
 var dns = require('dns');
+var deasync = require('deasync');
 
-module.exports = function(cb){
+module.exports = deasync(function(cb){
 
     var uqdn = os.hostname();
     dns.lookup(uqdn, { hints: dns.ADDRCONFIG }, function(err, ip) {
-        if(err) throw err;
+        if(err) return cb(err);
         
         dns.lookupService(ip, 0, function (err, fqdn) {
-            if (err) throw err;
+            if (err) return cb(err);
             
-            cb(fqdn);
+            cb(null, fqdn);
         });
     });
-}
+});

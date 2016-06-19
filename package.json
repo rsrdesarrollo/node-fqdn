@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rsrdesarrollo/node-fqdn/issues"
   },
-  "homepage": "https://github.com/rsrdesarrollo/node-fqdn#readme"
+  "homepage": "https://github.com/rsrdesarrollo/node-fqdn#readme",
+  "dependencies": {
+    "deasync": "^0.1.7"
+  }
 }
