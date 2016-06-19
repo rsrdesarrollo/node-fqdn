@@ -13,7 +13,5 @@ npm install node-fqdn --save
 ```javascript
 var fqdn = require('node-fqdn');
 
-fqdn(function(fqdn_str){
-    console.log("FQDN:", fqdn_str);
-});
+console.log("FQDN:", fqdn());
 ```
