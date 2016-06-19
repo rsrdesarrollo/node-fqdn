@@ -1,0 +1,23 @@
+{
+  "name": "node-fqdn",
+  "version": "1.0.0",
+  "description": "Node module to get FQDN from local machine. Multiplatform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsrdesarrollo/node-fqdn.git"
+  },
+  "keywords": [
+    "fqdn",
+    "multiplatform"
+  ],
+  "author": "rsrdesarrollo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rsrdesarrollo/node-fqdn/issues"
+  },
+  "homepage": "https://github.com/rsrdesarrollo/node-fqdn#readme"
+}
